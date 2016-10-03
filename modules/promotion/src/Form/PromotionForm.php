@@ -35,6 +35,7 @@ class PromotionForm extends ContentEntityForm {
     /* @var \Drupal\commerce_promotion\Entity\Promotion $promotion */
     $promotion = $this->entity;
     $form = parent::form($form, $form_state);
+    die('intentional fail');
 
     $form['#tree'] = TRUE;
     $form['#theme'] = ['commerce_promotion_form'];
